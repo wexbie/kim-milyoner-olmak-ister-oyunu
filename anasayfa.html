@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Meryem Kardelen Baykara">
+    <title>Anasayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/card.css">
+    <link rel="stylesheet" href="assets/css/nasill.css">
+    <link rel="icon" href="resim/logo.png">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/sorukutu.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="ses" onclick="toggleSound();"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="basla">
+        <div class="logo">
+            <img src="resim/logo.png" alt="">
+        </div>
+        <div class="hosgeldin">
+            <span class="wexrainbow" id="kullaniciAdi">Merhaba Yarışmacı,</span>
+        </div>
+        <div class="secenekler">
+            <div class="butonlar">
+                <button onclick="startGame();" class="btn" type="button">
+                    <strong>Oyuna Başla</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                <button class="btn" type="button">
+                    <strong>Ayarlar</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+                <button id="howToButton" class="btn" type="button">
+                    <strong>Nasıl Oynanır?</strong>
+                    <div id="container-stars">
+                        <div id="stars"></div>
+                    </div>
+
+                    <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="wait" style="display:none;">
+        <div class="wrapper">
+            <div class="main">
+                <p>Sorular Yükleniyor...</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="questions" style="display:none;">
+        <div class="wrapper">
+            <div class="main">
+                <div class="soru">
+                    <div class="card" style="width: 250px;">
+                        <span style="z-index: 9999;" id="qcount"></span><b style="z-index: 20;"><span
+                                style="z-index: 20;" id="cprize"></span></b>
+                    </div>
+                    <div class="soru-ust qmain" id="qwelcome">
+                        <div class="saniye remaining">30</div>
+                        <a href="#" class="telefon" id="halfJoker" onclick="useHalfJoker();"></a>
+                        <a href="#" class="yari-yariya" id="callJoker" onclick="startCallJoker();"></a>
+                        <a href="#" class="izleyici" id="viewerJoker" onclick="useViewerJoker();"></a>
+                    </div>
+                    <div class="ovalkutu qmain" id="qsure" style="display:none;">
+                        <div class="saniye remaining">30</div>
+                        <p class="lg">SON KARARIN MI?</p>
+                        <a href="#" class="buton" onclick="checkAnswer();">EVET</a>
+                        <a href="#" class="buton turuncu" onclick="dismissAnswer();">HAYIR</a>
+                    </div>
+                    <div class="ovalkutu qmain" id="qwin" style="display:none;">
+                        <p class="xlg bigmargin" style="margin-top:-10px;">
+                            DOĞRU CEVAP<br />
+                            <b><span id="currentPrize">100 TL</span></b>
+                        <p class="lg">Devam etmek istiyor musunuz?</p>
+                        <a href="#" class="buton" onclick="showQuestions();">EVET</a>
+                        <a href="#" class="buton turuncu" onclick="winGame();">ÖDÜLÜ AL</a>
+                        </p>
+                    </div>
+                    <div class="ovalkutu qmain" id="qviewer" style="display:none;">
+                        <div class="saniye remaining">30</div>
+                        <p class="lg">İZLEYİCİ OYLAMASI</p>
+                        <p id="viewerOp">
+                        </p>
+                    </div>
+                    <div class="ovalkutu qmain" id="qcall" style="display:none;">
+                        <div class="saniye remaining"></div>
+                        <p class="lg">KİMİ ARAYACAKSIN?</p>
+                        <a href="#" class="kisi" onclick="useCallJoker('Güngör');"><span class="title">Güngör Hoca</span></a>
+                        <a href="#" class="kisi" onclick="useCallJoker('Altan');"><span class="title">Altan Hoca</span></a>
+                        <a href="#" class="kisi" onclick="useCallJoker('Kemal');"><span class="title">Kemal Hoca</span></a>
+                    </div>
+                    <div class="ovalkutu qmain" id="qcallResult" style="display:none;">
+                        <div class="saniye remaining"></div>
+                        <p class="sohbet" id="callerOp">
+                        </p>
+                    </div>
+                    <div class="ovalkutu qmain" id="qlose" style="display:none;">
+                        <div class="saniye remaining"></div>
+                        <p class="lg">
+                            <b>YANLIŞ CEVAP</b><br />
+                            <span class="vurgu" id="lastLosePrize">0 TL</span> İLE OYUNU BİTİRDİN
+                        </p>
+                        <a href="#" onclick="startGame();" class="buton ortala turuncu">TEKRAR OYNA</a>
+                        <a href="#" onclick="showHome();" class="buton ortala">ANASAYFA</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="soruu">
+            <div class="card alt" style="min-height: 90px;">
+                <div style="z-index: 999 !important;" id="question"></div>
+                <!-- Soru buraya gelecek -->
+            </div>
+            <div class="sorular">
+                <a href="#" id="a1" class="answer" onclick="startCheckAnswer($(this));">
+                    <div class="sorukutu">
+                        <span style="z-index: 9999;" class="harf">A: </span> <span style="z-index: 9999;" class="cevap">
+                            <!-- A şıkkı buraya gelecek --> </span>
+                    </div>
+                </a>
+                <a href="#" id="a2" class="answer" onclick="startCheckAnswer($(this));">
+                    <div class="sorukutu">
+                        <span style="z-index: 9999;" class="harf">B: </span> <span style="z-index: 9999;" class="cevap">
+                            <!-- B şıkkı buraya gelecek --> </span>
+                    </div>
+                </a>
+                <a href="#" id="a3" class="answer" onclick="startCheckAnswer($(this));">
+                    <div class="sorukutu">
+                        <span style="z-index: 9999;" class="harf">C: </span> <span style="z-index: 9999;" class="cevap">
+                            <!-- C şıkkı buraya gelecek --> </span>
+                    </div>
+                </a>
+                <a href="#" id="a4" class="answer" onclick="startCheckAnswer($(this));">
+                    <div class="sorukutu">
+                        <span style="z-index: 9999;" class="harf">D: </span> <span style="z-index: 9999;" class="cevap">
+                            <!-- D şıkkı buraya gelecek --> </span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- kazanma mesajı -->
+    <div id="wingame" style="display:none; z-index: 9999;">
+        <div class="wrapper">
+            <div class="main">
+                <img src="assets/img/logo.png" class="logo-sm">
+                <h2>TEBRİKLER!</h2>
+                <h2>KAZANDINIZ...</h2>
+                <div class="cek">
+                    <span id="lastPrize"></span>
+                </div>
+                <a href="#" onclick="startGame();" class="buton">
+                    TEKRAR OYNA
+                </a>
+                <a href="#" onclick="showHome();" class="buton turuncu">
+                    ANASAYFA
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- nasıl oynanır -->
+    <div class="nasill nasiloynanir" id="howto" style="display: none; z-index: 9999; width: calc(100% - 90px);">
+        <div class="header">
+            <a href="#" onclick="showHome();">
+                <img style="position: fixed; top: 7 px; left: 10px; width: 24px; height: 24px;"
+                    src="assets/img/geri.png" alt=""></a>
+            <br></br>
+            <div class="clear"></div>
+        </div>
+        <span class="small-text">Powered By Wexbie</span>
+        <span class="title">Nasıl Oynanır?</span>
+        <span class="desc">Toplam 15 soruya doğru cevap vererek tam 100 puan kazanabilirsin. Takıldığın zaman kullanmak
+            için
+            3 joker hakkın var, bunlar;</span>
+        <ul>
+            <li class="desc"><b>Telefonla Sorma:</b> Soruyu bir arkadaşına sorabilirsin. Arkadaşın emin olduğu cevabın
+                yüzdesini sana
+                söyleyecek.</li>
+            <li class="desc"><b>Yarı Yarıya:</b> Bu joker hakkı yanlış olan iki seçeneği silecek.</li>
+            <li class="desc"><b>İzleyiciye Sorma:</b> İzleyicilerin seçtiği cevap şıklarının yüzdesini görebilirsin.
+            </li>
+        </ul>
+    </div>
+
+    <script>
+        var kullaniciAdi = localStorage.getItem('kullaniciAdi');
+        if (kullaniciAdi) {
+            document.getElementById('kullaniciAdi').textContent = "Merhaba " + kullaniciAdi + ",";
+        }
+    </script>
+
+    <script src="js/howler.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

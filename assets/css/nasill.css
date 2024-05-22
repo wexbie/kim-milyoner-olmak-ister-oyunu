@@ -1,0 +1,39 @@
+.nasill {
+    max-width: 350px;
+    background-color: rgb(7 16 45);
+    background: linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+    background: -webkit-linear-gradient(to top right, rgb(7 16 45), rgb(58 60 84));
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid rgb(84 90 106);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+}
+
+.title,
+.desc {
+    margin: 8px 0;
+}
+
+.small-text {
+    color: #488aec;
+    font-size: 14px;
+}
+
+.title {
+    color: #fff;
+    font-family: "Freeman", sans-serif;
+    font-style: normal;
+    line-height: 26px;
+}
+
+.desc {
+    color: white;
+    font-family: "Freeman", sans-serif;
+    font-style: normal;
+}

@@ -1,0 +1,1104 @@
+* {
+    font-family: "Freeman", sans-serif;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+button:focus {
+    outline: 0;
+}
+
+a,
+a:focus,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+h2 {
+    text-align: center;
+}
+
+body {
+    background-image: url(../../resim/bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(7px);
+}
+body {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.small {
+    transform: scale(0.8);
+    transform-origin: 50% 0;
+    -webkit-transform: scale(0.8);
+    -webkit-transform-origin: 50% 0;
+    -moz-transform: scale(0.8);
+    -moz-transform-origin: 50% 0;
+    -o-transform: scale(0.8);
+    -o-transform-origin: 50% 0;
+    -ms-transform: scale(0.8);
+    -ms-transform-origin: 50% 0;
+}
+
+.header>.ses {
+    background: url(../img/ses.png);
+    background-size: 200%;
+    background-position: 0 -101%;
+    background-size: cover;
+    float: right;
+}
+
+.header>.geri {
+    background: url(/img/geri.png) no-repeat left top;
+    background-size: cover;
+    float: left;
+}
+
+.logo-title {
+    position: relative;
+}
+
+.logo-title>.kutu {
+    position: absolute;
+    top: 39%;
+}
+
+.main {
+    color: #fff;
+}
+
+.main .kutu {
+    background: url(../img/kutu.png);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-position: 0 0;
+}
+
+.home .main .kutu:hover,
+.home .main .kutu:focus {
+    background-position: 0 -100%;
+}
+
+.main .kutu-sm {
+    background: url(../img/kutu-2.png);
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+    background-position: 0 0;
+}
+
+.main .kutu-sm.kirmizi {
+    background-position: 0 -100%;
+}
+
+.haklar {
+    margin-top: 10px;
+}
+
+.hak {
+    clear: both;
+}
+
+.hak>div {
+    float: left;
+    width: 90px;
+    height: 37.3px;
+    margin-right: 5px;
+    background: url(../img/haklar.png) no-repeat left top;
+    background-size: cover;
+}
+
+.hak>p {
+    padding: 0 10px;
+}
+
+.hak>.telefon {
+    background-position: 0 0;
+}
+
+.hak>.yari-yariya {
+    background-position: 0 50%;
+}
+
+.hak>.izleyici {
+    background-position: 0 100%;
+}
+
+.sorular {
+    position: fixed;
+    width: 52vw;
+    bottom: 125px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sorular>* {
+    margin-bottom: 7px;
+}
+
+
+.soru {
+    margin-top: 80px;
+}
+
+.soru-ust,
+.soru-icerik,
+.ovalkutu,
+.ovalkutu>.saniye {
+    background: url(../img/soru.png) no-repeat left top;
+    background-size: cover;
+    position: relative;
+}
+
+.soru-ust>.saniye,
+.main .soru-ust>a {
+    position: absolute;
+}
+
+.main .soru-ust>a {
+    text-align: right;
+    color: #ff1a1a;
+    text-decoration: none;
+}
+
+.main .soru-icerik {
+    text-align: center;
+    font-size: 2.2rem;
+    font-family: "Freeman", sans-serif;
+    font-style: normal;
+}
+
+.main .soru .kutu {
+    text-align: left;
+}
+
+.main .soru .kutu>span.harf,
+.ovalkutu p>.vurgu {
+    color: #ce7e00;
+    font-weight: bold;
+}
+
+.main .soru .kutu.yesil {
+    background-position: 0 -100%;
+}
+
+.main .soru .kutu.turuncu {
+    background-position: 0 -200%;
+}
+
+.main .soru .kutu.kirmizi {
+    background-position: 0 -300%;
+}
+
+.ovalkutu .buton {
+    background: url(../img/buton.png) no-repeat left top;
+    background-size: cover;
+    text-align: center;
+    border: 0;
+    color: #fff;
+}
+
+.ovalkutu .buton.turuncu {
+    background-position: 0 100%;
+}
+
+.main>.buton {
+    background: url(../img/buton.png) no-repeat left top;
+    background-size: cover;
+    text-align: center;
+    border: 0;
+}
+
+.ovalkutu>.kisi {
+    color: #fff;
+    display: block;
+}
+
+.ovalkutu>.kisi>.title {
+    font-weight: bold;
+}
+
+.ovalkutu>.sohbet {
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .wrapper {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .header>.ses {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header>.geri {
+        width: 24px;
+        height: 24px;
+        margin-top: 10px;
+    }
+
+    .main .logo {
+        width: 70vw;
+        margin: 30px 11vw;
+    }
+
+    .main .logo-sm {
+        width: 40vw;
+        margin: 30px 26vw;
+    }
+
+    .main .kutu {
+        width: 84.2vw;
+        height: 14.9vw;
+        margin: 10px 5vw;
+        font: 12pt RalewayBold;
+        line-height: 14.5vw;
+    }
+
+    .main .kutu-sm {
+        width: 81.8vw;
+        height: 11.8vw;
+        margin: 10px 5vw;
+        font: 12pt PoppinsLight;
+        line-height: 12vw;
+    }
+
+    .main .soru-ust {
+        width: 82vw;
+        height: 38.8vw;
+        margin: -80px 5vw;
+    }
+
+    .main .soru-ust>.saniye {
+        left: 0;
+        top: 10vw;
+        width: 19vw;
+        height: 19vw;
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        line-height: 17vw;
+    }
+
+    .main .soru-ust>a {
+        width: 25vw;
+        height: 8.5vw;
+        right: 3vw;
+        font: bold 14pt PoppinsLight;
+        padding-right: 10px;
+        line-height: 9.5vw;
+    }
+
+    .main .soru-ust>a.telefon {
+        top: 3.5vw;
+    }
+
+    .main .soru-ust>a.yari-yariya {
+        top: 13.5vw;
+    }
+
+    .main .soru-ust>a.izleyici {
+        top: 23.5vw;
+    }
+
+    .main .soru-icerik {
+        background-position: 0 -38.8vw;
+        width: 82vw;
+        height: 24.2vw;
+        padding: 10px 25px;
+        margin: 20px 5.8vw;
+        font: 9pt PoppinsLight;
+    }
+
+    .main .soru .kutu {
+        padding: 0 7vw;
+        font: 12pt "Freeman";
+        line-height: 14.5vw;
+    }
+
+    .ovalkutu {
+        background-position: 0 -63vw;
+        width: 82vw;
+        height: 50vw;
+        padding: 13vw 25px 10px 25px;
+        margin: -14px 0 0 5.8vw;
+        font: 9pt PoppinsLight;
+        position: relative;
+        text-align: center;
+        bottom: 80px;
+    }
+
+    .ovalkutu>.saniye {
+        position: absolute;
+        top: -10vw;
+        left: 30vw;
+        background-position: 0 -9vw;
+        background-size: 400%;
+        width: 20vw;
+        height: 20vw;
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        line-height: 19vw;
+    }
+
+    .ovalkutu>p.lg {
+        font: 12pt "Freeman";
+    }
+
+    .ovalkutu>p.xlg {
+        font: 20pt "Freeman";
+    }
+
+    .ovalkutu>.bigmargin {
+        margin-top: 5vw;
+    }
+
+    .ovalkutu .buton {
+        margin-top: 3vw;
+        width: 30vw;
+        height: 9.4vw;
+        font: 3vw AvenirHeavy;
+        line-height: 9.4vw;
+        display: block;
+        float: left;
+        margin: 0 1.5vw;
+    }
+
+    .ovalkutu .buton.ortala {
+        margin-left: 18vw;
+    }
+
+    .cek {
+        background: url(../img/cek.png) no-repeat left top;
+        background-size: cover;
+        width: 70vw;
+        height: 33.4vw;
+        margin: 0 10vw;
+        position: relative;
+    }
+
+    .cek>span {
+        position: absolute;
+        top: 15vw;
+        right: 10vw;
+        color: #000;
+        font: bold 14pt "Freeman";
+        padding: 1vw 2vw;
+    }
+
+    .main>.buton {
+        margin-top: 3vw;
+        width: 40vw;
+        height: 12vw;
+        font: 10pt AvenirHeavy;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 11.5vw;
+        margin: 8vw 25vw;
+    }
+
+    .ovalkutu>.kisi {
+        font: 5vw "Freeman";
+        padding: 1vw 0;
+    }
+
+    .ovalkutu>p.sohbet {
+        margin-top: -5vw;
+        font-size: 2.5vw;
+    }
+
+}
+
+@media only screen and (min-width: 768px) {
+    .hosgeldin {
+        bottom: 280px !important;
+    }
+
+    .wrapper {
+        width: 750px;
+        margin: 0 auto;
+    }
+
+    .header {
+        margin-top: 20px;
+        margin-right: 20px;
+    }
+
+    .header>.ses {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header>.geri {
+        width: 54px;
+        height: 81px;
+    }
+
+    .main .logo {
+        width: 350px;
+        margin: 50px 200px;
+    }
+
+    .main .logo-sm {
+        width: 250px;
+        margin: 50px 250px;
+    }
+
+    .main .kutu {
+        width: 530px;
+        height: 94px;
+        margin: 10px 110px;
+        font: 16pt RalewayBold;
+        line-height: 94px;
+    }
+
+    .main .kutu-sm {
+        width: 530px;
+        height: 77.5px;
+        margin: 10px 110px;
+        font: 16pt PoppinsLight;
+        line-height: 77.5px;
+    }
+
+    .hak {
+        margin-bottom: 15px;
+    }
+
+    .main .soru-ust {
+        width: 530px;
+        height: 251.3px;
+        margin: -115px 110px;
+    }
+
+    .main .soru-ust>.saniye {
+        left: 0;
+        top: 65px;
+        width: 123px;
+        height: 120px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        line-height: 112px;
+    }
+
+    .main .soru-ust>a {
+        width: 192px;
+        height: 60px;
+        right: 20px;
+        font: bold 24pt PoppinsLight;
+        padding-right: 18px;
+        line-height: 65px;
+    }
+
+    .main .soru-ust>a.telefon {
+        top: 20px;
+    }
+
+    .main .soru-ust>a.yari-yariya {
+        top: 87px;
+    }
+
+    .main .soru-ust>a.izleyici {
+        top: 155px;
+    }
+
+    .main .soru-icerik {
+        background-position: 0 -251px;
+        width: 530px;
+        height: 157px;
+        padding: 10px 35px;
+        margin: 20px 110px;
+        font: 16pt PoppinsLight;
+    }
+
+    .main .soru .kutu {
+        padding: 0 50px;
+        font: 15pt "Freeman";
+        line-height: 94px;
+    }
+
+    .ovalkutu {
+        background-position: 0 -406px;
+        width: 530px;
+        height: 323.6px;
+        padding: 100px 25px 10px 25px;
+        margin: -140px 0 0 110px;
+        font: 9pt PoppinsLight;
+        position: relative;
+        text-align: center;
+        z-index: 99;
+    }
+
+    .ovalkutu>.saniye {
+        position: absolute;
+        top: -50px;
+        left: 205px;
+        background-position: 0 -58px;
+        background-size: 400%;
+        width: 120px;
+        height: 120px;
+        text-align: center;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        line-height: 100px;
+    }
+
+    .ovalkutu>p.lg {
+        font: 20pt "Freeman";
+    }
+
+    .ovalkutu>p.xlg {
+        font: 30pt "Freeman";
+    }
+
+    .ovalkutu>.bigmargin {
+        margin-top: 25px;
+    }
+
+    .ovalkutu .buton {
+        margin-top: 20px;
+        width: 180px;
+        height: 57.2px;
+        font: 14pt AvenirHeavy;
+        line-height: 57.2px;
+        display: block;
+        float: left;
+        margin: -2px 30px;
+    }
+
+    .ovalkutu .buton.ortala {
+        margin-left: 150px;
+    }
+
+    .cek {
+        background: url(../img/cek.png) no-repeat left top;
+        background-size: cover;
+        width: 530px;
+        height: 253px;
+        margin: 0 110px;
+        position: relative;
+    }
+
+    .cek>span {
+        position: absolute;
+        top: 85px;
+        right: 78px;
+        color: #40284e;
+        font: bold 14pt "Freeman";
+        padding: 14px 0px;
+    }
+
+    .main>.buton {
+        margin-top: 3vw;
+        width: 320px;
+        height: 101.3px;
+        font: 16pt AvenirHeavy;
+        color: #fff;
+        display: block;
+        text-align: center;
+        line-height: 101px;
+        margin: 50px 215px;
+    }
+
+    .ovalkutu>.kisi {
+        font: 20pt "Freeman";
+        padding: 10px 0;
+    }
+
+    .ovalkutu>p.sohbet {
+        margin-top: -44px;
+        font-size: 12pt;
+    }
+
+    #question {
+        width: 800px;
+    }
+
+}
+
+.clear {
+    clear: both;
+}
+
+#text {
+    z-index: 999 !important;
+    color: white;
+}
+
+#a1 {
+    z-index: 999 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#a2 {
+    z-index: 999 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#a3 {
+    z-index: 999 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#a4 {
+    z-index: 999 !important;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    overflow: hidden;
+    height: 5rem;
+    background-size: 300% 300%;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+    transition: 0.5s;
+    animation: gradient_301 5s ease infinite;
+    border: double 4px transparent;
+    background-image: linear-gradient(#212121, #212121), linear-gradient(137.48deg, #ffdb3b 10%, #FE53BB 45%, #8F51EA 67%, #0044ff 87%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+}
+
+#container-stars {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+    backdrop-filter: blur(1rem);
+    border-radius: 5rem;
+}
+
+strong {
+    z-index: 99 !important;
+    font-family: "Freeman", sans-serif !important;
+    font-style: normal !important;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #FFFFFF;
+}
+
+#glow {
+    position: absolute;
+    display: flex;
+    width: 12rem;
+}
+
+.circle {
+    width: 100%;
+    height: 30px;
+    filter: blur(2rem);
+    animation: pulse_3011 4s infinite;
+    z-index: -1;
+}
+
+.circle:nth-of-type(1) {
+    background: rgba(254, 83, 186, 0.636);
+}
+
+.circle:nth-of-type(2) {
+    background: rgba(142, 81, 234, 0.704);
+}
+
+.btn:hover #container-stars {
+    z-index: 1;
+    background-color: #212121;
+}
+
+.btn:hover {
+    transform: scale(1.1)
+}
+
+.btn:active {
+    border: double 4px #FE53BB;
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    animation: none;
+}
+
+.btn:active .circle {
+    background: #FE53BB;
+}
+
+#stars {
+    position: relative;
+    background: transparent;
+    width: 200rem;
+    height: 200rem;
+}
+
+#stars::after {
+    content: "";
+    position: absolute;
+    top: -10rem;
+    left: -100rem;
+    width: 100%;
+    height: 100%;
+    animation: animStarRotate 90s linear infinite;
+}
+
+#stars::after {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+}
+
+#stars::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 170%;
+    height: 500%;
+    animation: animStar 60s linear infinite;
+}
+
+#stars::before {
+    background-image: radial-gradient(#ffffff 1px, transparent 1%);
+    background-size: 50px 50px;
+    opacity: 0.5;
+}
+
+.secenekler {
+    position: fixed;
+    left: 0;
+    bottom: -90px !important;
+    width: 284px;
+    height: 124px;
+    color: #e3e3e3;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.wexrainbow {
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    background: -webkit-linear-gradient(16deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #ffffff 75%, #ffffff 100%);
+    background: linear-gradient(74deg, #4285f4 0, #9b72cb 9%, #d96570 20%, #d96570 24%, #9b72cb 35%, #4285f4 44%, #9b72cb 50%, #d96570 56%, #ffffff 75%, #ffffff 100%);
+    background-size: 400% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 1.8s linear 1;
+    font-size: 3.5rem;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-135rem);
+    }
+}
+
+@keyframes animStarRotate {
+    from {
+        transform: rotate(360deg);
+    }
+
+    to {
+        transform: rotate(0);
+    }
+}
+
+@keyframes gradient_301 {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes pulse_3011 {
+    0% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+    }
+
+    70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+    }
+
+    100% {
+        transform: scale(0.75);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@media screen and (min-width: 200px) and (max-width: 1024px) {
+
+    .logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 280px;
+        max-width: 350px;
+        height: 280px;
+        top: 100px;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .secenekler {
+        position: fixed;
+        left: 0;
+        bottom: 0px !important;
+        width: 100%;
+        color: #e3e3e3;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin: auto 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 300px;
+    }
+
+
+    .butonlar {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-container button {
+        margin-top: 140px;
+        margin-right: 10px;
+    }
+
+    .kullanici {
+        position: fixed;
+        left: 0;
+        bottom: 260px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin: auto 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90px;
+        font-weight: 800;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        z-index: 10;
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 2048px) {
+
+    .logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 280px;
+        max-width: 350px;
+        height: 280px;
+        top: 100px;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .logo img {
+        width: 200px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .secenekler {
+        position: fixed;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        color: #e3e3e3;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin: auto 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        font-weight: 800;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+    }
+
+
+    .butonlar {
+        display: flex;
+        flex-direction: column;
+        align-items: center !important;
+        justify-content: center !important;
+        bottom: -80px !important;
+    }
+
+
+    .button-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .button-container button {
+        margin-top: 140px;
+        margin-right: 10px;
+    }
+
+    .kullanici {
+        position: fixed;
+        left: 0;
+        bottom: 270px;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin: auto 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 90px;
+        font-weight: 800;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+        z-index: 10;
+    }
+}
+
+.butonlar button {
+    margin-bottom: 20px;
+}
+
+.hosgeldin {
+    position: fixed;
+    left: 0;
+    bottom: 330px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: auto 0;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    font-weight: 800;
+    font-size: 2.2rem;
+    font-family: "Freeman", sans-serif;
+    font-style: normal;
+}
+
+#viewerOp {
+    z-index: 999;
+    color: azure;
+}
+
+.soruu {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+#question {
+    color: #fff;
+}

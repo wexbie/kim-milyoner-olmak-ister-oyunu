@@ -1,0 +1,172 @@
+/* Telefon boyutlarına göre ayarlar */
+@media screen and (max-width: 767px) {
+    .sorukutu {
+        width: 90%;
+        /* Kartların genişliğini ayarlar */
+        height: auto;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 14px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .card {
+        width: 90% !important;
+        /* Kartların genişliğini ayarlar */
+        height: auto;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 14px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .soru-ust {
+        margin: 20px 65px;
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .sorular {
+        width: 90vw;
+        bottom: 90px !important;
+    }
+}
+
+
+
+/* Tablet boyutlarına göre ayarlar */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .sorukutu {
+        width: 100%;
+        /* Kartların genişliğini ayarlar */
+        height: auto;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 16px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .card {
+        width: 70%;
+        /* Kartların genişliğini ayarlar */
+        height: auto;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 16px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .soru-ust {
+        margin: 20px 65px;
+        width: 60vw;
+        height: 35vw;
+    }
+
+    .sorular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 sütun oluşturur */
+        grid-gap: 15px;
+        /* Sütunlar ve satırlar arasında 20 piksel boşluk bırakır */
+        bottom: 125px;
+        height: 8.5vw;
+    }
+}
+
+/* Büyük ekran boyutlarına göre ayarlar */
+@media screen and (min-width: 1025px) {
+    .sorukutu {
+        width: 90%;
+        /* Kartların genişliğini ayarlar */
+        height: 90%;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 18px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .card {
+        width: 50%;
+        /* Kartların genişliğini ayarlar */
+        height: auto;
+        /* Kartların yüksekliğini otomatik olarak ayarlar */
+        font-size: 18px;
+        /* Metin boyutunu ayarlar */
+    }
+
+    .alt {
+        bottom: 280px;
+    }
+
+    .sorular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 sütun oluşturur */
+        grid-gap: 20px;
+        /* Sütunlar ve satırlar arasında 20 piksel boşluk bırakır */
+        bottom: 55px;
+        height: 8.5vw;
+    }
+
+    #question {
+        width: 800px;
+    }
+}
+/* 4K Çözünürlük */
+
+/* Büyük ekran boyutlarına göre ayarlar */
+@media screen and (min-width: 3640px) and (max-width: 5160px) {
+    .logo {
+        display: block;
+        position: relative;
+        margin: 0 auto;
+        width: 280px;
+        max-width: 350px;
+        height: 280px;
+        top: 100px;
+        justify-content: center;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .secenekler {
+        position: fixed;
+        left: 0;
+        bottom: 0px;
+        width: 100%;
+        color: #e3e3e3;
+        padding: 10px;
+        box-sizing: border-box;
+        padding: 8px;
+        margin: auto 0;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        font-weight: 800;
+        font-size: 2.2rem;
+        font-family: "Freeman", sans-serif;
+        font-style: normal;
+    }
+
+    .sorukutu {
+        width: 90%;
+        height: 90%;
+        font-size: 18px;
+    }
+
+    .card {
+        width: 50%;
+        height: auto;
+        font-size: 18px;
+    }
+
+    .alt {
+        bottom: 280px;
+    }
+
+    .sorular {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        bottom: 55px;
+        height: 8.5vw;
+    }
+}
