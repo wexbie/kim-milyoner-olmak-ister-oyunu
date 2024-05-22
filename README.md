@@ -22,7 +22,6 @@
   
 <h2>💻 Kullanılan Teknolojiler</h2>
 
-Technologies used in the project:
 
 *   HTML
 *   CSS
