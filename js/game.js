@@ -204,16 +204,13 @@ function showQuestions() {
 	$('#wait').hide();
 	$('#wingame').hide();
 	$('#questions').show();
-
 	right = questions[current].correct_answer;
 	var options = questions[current].options;
 	if (current < 7) {
         remaining = 180;
     } else {
-        // 7. sorudan sonra süre sınırsız olacak
         remaining = 9999;
     }
-
 	$('.remaining').html(remaining === 9999 ? "Sınırsız" : remaining);
 	$('#cprize').html(prizes[current]);
 	$('.qmain').hide();
@@ -228,9 +225,7 @@ function showQuestions() {
 	} else {
 		$('.answer').attr('onclick', "startCheckAnswer($(this));");
 	}
-
 	clearTimeout(timer);
-    // 7. sorudan sonra süreyi gösterme
     if (current < 7) {
         timer = setTimeout(showRemaining, 1000);
     }
@@ -250,10 +245,8 @@ function showRemaining() {
 }
 function winGame() {
     var kullaniciAdi = localStorage.getItem('kullaniciAdi') || "Yarışmacı";
-    var prizeText = prizes[current - 1]; // Doğru puanı almak için current - 1 kullanıyoruz
-    
+    var prizeText = prizes[current - 1]; 
     $('#lastPrize').html("Tebrikler " + kullaniciAdi + ", " + prizeText + " kazandınız!");
-    
     $('#welcome').hide();
     $('#wait').hide();
     $('#questions').hide();
@@ -262,11 +255,8 @@ function winGame() {
     if (wingame.style.display === 'none') {
         wingame.style.display = 'block';
     }
-    
     start_sound.play();
 }
-
-
 function startCheckAnswer(e) {
 	$('.qmain').hide();
 	$('#qsure').show();
@@ -287,11 +277,11 @@ function checkAnswer() {
         $('#currentPrize').html(prizes[current]);
         current++;
         showPrizes();
-        if (current === questions.length) { // Son soruya geldiysek
+        if (current === questions.length){
             setTimeout(function () {
                 $('#qwin').show();
                 winGame();
-            }, 2000); // 2 saniye sonra qwin gösterilsin ve winGame fonksiyonu çağrılsın
+            }, 2000);
         } else {
             $('.answer > .sorukutu').css('background-color', 'green');
             $('.qmain').hide();
@@ -308,11 +298,9 @@ function checkAnswer() {
         setTimeout(function () {
             $('#qlose').show();
             loseGame();
-        }, 2000); // 2 saniye sonra qlose gösterilsin ve loseGame fonksiyonu çağrılsın
+        }, 2000);
     }
 }
-
-
 function loseGame() {
 	clearTimeout(timer);
 	if (current < 4)
