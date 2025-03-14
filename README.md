@@ -6,12 +6,6 @@
 
 [https://kim-milyoner-olmak-ister-oyunu.vercel.app/](https://kim-milyoner-olmak-ister-oyunu.vercel.app/)
 
-<h2>Ekran Görüntüsü:</h2>
-
-<img src="https://i.hizliresim.com/pa6ela1.png" alt="project-screenshot" width="829" height="332.23/">
-
-<img src="https://i.hizliresim.com/ec3enec.png" alt="project-screenshot" width="829" height="332.23/">
-
 <h2>🛠️ İndirme Adımları:</h2>
 
 <p>1. Dosyayı indirin ya da github deposunu klonlayın</p>
