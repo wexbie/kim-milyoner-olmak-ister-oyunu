@@ -1,152 +1,142 @@
 [
     {
-        "question": "Düzgün yetmişikigenin bir iç açısı kaç derecedir?",
+        "question": "Türkiye Cumhuriyeti'nin kurucusu Mustafa Kemal Atatürk hangi yıl vefat etmiştir?",
         "options": [
-            "175",
-            "170",
-            "165",
-            "160"
+            "1936",
+            "1937",
+            "1938",
+            "1939"
         ],
-        "correct_answer": "175"
+        "correct_answer": "1938"
     },
     {
-        "question": "Bir düzgün çokgenin bir dış açısı aşağıdakilerden hangisi olamaz?",
+        "question": "Dünyanın çevresini tam tur dolaşan ilk insan kimdir?",
         "options": [
-            "120",
-            "90",
-            "72",
-            "48"
+            "Ferdinand Magellan",
+            "Vasco da Gama",
+            "Cristoforo Colombo",
+            "James Cook"
         ],
-        "correct_answer": "48"
+        "correct_answer": "Ferdinand Magellan"
     },
     {
-        "question": "Bir torbada numaralandırılmış 5 kırmızı ve 3 siyah bilye vardır.\n\nTorbadan rastgele iki bilye çekildiğinde en az birinin kırmızı gelmesi olasılığı kaçtır?",
+        "question": "Albert Einstein’ın ünlü denklemi E=mc²’de 'c' hangi fiziksel büyüklüğü temsil eder?",
         "options": [
-            "2/7",
-            "3/7",
-            "4/7",
-            "25/28"
+            "Işık hızı",
+            "Enerji",
+            "Kütle",
+            "Zaman"
         ],
-        "correct_answer": "25/28"
+        "correct_answer": "Işık hızı"
     },
     {
-        "question": "x³ + x² + 4x + 4 = 0\n\ndenkleminin gerçel kökü a, diğer kökleri b ve c'dir.\n\nBuna göre, a. b + c ifadesi aşağıdakilerden hangisine eşit olabilir?",
+        "question": "Aşağıdaki ülkelerden hangisi hem Avrupa hem de Asya kıtasında yer alır?",
         "options": [
-            "i",
-            "2i",
-            "3i",
-            "4i"
+            "Rusya",
+            "Türkiye",
+            "Kazakistan",
+            "Azerbaycan"
         ],
-        "correct_answer": "4i"
+        "correct_answer": "Rusya"
     },
     {
-        "question": "5 kız, 4 erkek öğrenci arasından 2 kız öğrenci ve 2 erkek öğrenci\n kaç farklı biçimde seçilebilir?",
+        "question": "Michelangelo'nun en ünlü eserlerinden biri olan Sistine Şapeli’nin tavan freskleri hangi tarihte tamamlanmıştır?",
         "options": [
-            "50",
-            "60",
-            "75",
-            "80"
+            "1508",
+            "1512",
+            "1516",
+            "1520"
         ],
-        "correct_answer": "60"
+        "correct_answer": "1512"
     },
     {
-        "question": "1, 2, 3, 4, 5, 6 rakamları kullanılarak altı basamaklı,\n rakamları birbirinden farklı doğal sayıların tümü yazılıyor.\n Yazılan bu sayıların kaç tanesinde tek rakamlar artan sıradadır?",
+        "question": "İlk modern olimpiyat oyunları hangi yılda düzenlenmiştir?",
         "options": [
-            "60",
-            "80",
-            "90",
-            "120"
+            "1892",
+            "1894",
+            "1896",
+            "1900"
         ],
-        "correct_answer": "120"
+        "correct_answer": "1896"
     },
     {
-        "question": "5 farklı oyuncağın tamamı,\n üç çocuğa, her birine en az bir oyuncak vermek koşuluyla kaç farklı biçimde dağıtılabilir?",
+        "question": "DNA yapısını ilk çözen bilim insanları kimlerdir?",
         "options": [
-            "90",
-            "120",
-            "150",
-            "180"
+            "James Watson ve Francis Crick",
+            "Gregor Mendel ve Charles Darwin",
+            "Rosalind Franklin ve Maurice Wilkins",
+            "Max Planck ve Erwin Schrödinger"
         ],
-        "correct_answer": "150"
+        "correct_answer": "James Watson ve Francis Crick"
     },
     {
-        "question": "Herhangi üç tanesi doğrusal olmayan 10 tane noktanın herhangi ikisinden geçen kaç farklı doğru çizilebilir?",
+        "question": "Aşağıdaki elementlerden hangisi en yüksek erime noktasına sahiptir?",
         "options": [
-            "35",
-            "40",
-            "45",
-            "50"
+            "Demir",
+            "Tungsten",
+            "Platin",
+            "Titanyum"
         ],
-        "correct_answer": "45"
+        "correct_answer": "Tungsten"
     },
     {
-        "question": "270 sayısının pozitif tam sayı bölenlerinin arasından rastgele bir bölen seçiliyor.\nSeçilen bu bölenin, 6 nın bir katı olma olasılığı kaçtır?",
+        "question": "Keops Piramidi hangi antik uygarlık döneminde inşa edilmiştir?",
         "options": [
-            "1/8",
-            "1/4",
-            "3/8",
-            "1/2"
+            "İlk Hanedanlık Dönemi",
+            "Orta Krallık",
+            "Yeni Krallık",
+            "Eski Krallık"
         ],
-        "correct_answer": "3/8"
+        "correct_answer": "Eski Krallık"
     },
     {
-        "question": "Hileli bir paranın yazı gelme olasılığı, tura gelme olasılığının 5 katıdır.\nBuna göre, bu para düz bir zemine atıldığında tura gelme olasılığı kaçtır?",
+        "question": "Atomu oluşturan temel parçacıklardan biri olan protonun kütlesi yaklaşık olarak kaç kilogramdır?",
         "options": [
-            "1/10",
-            "1/8",
-            "1/6",
-            "1/4"
+            "1.67 x 10⁻²⁷ kg",
+            "9.11 x 10⁻³¹ kg",
+            "1.67 x 10⁻²⁴ kg",
+            "1.67 x 10⁻²² kg"
         ],
-        "correct_answer": "1/6"
+        "correct_answer": "1.67 x 10⁻²⁷ kg"
     },
     {
-        "question": "p(x)=xm-3+xm-2+x+1\n\nifadesi II.derece bir polinom olduğuna göre, m kaçtır ?",
+        "question": "Fransız İhtilali hangi yıl başlamıştır?",
         "options": [
-            "2",
-            "-2",
-            "4",
-            "-4"
+            "1776",
+            "1783",
+            "1789",
+            "1792"
         ],
-        "correct_answer": "4"
+        "correct_answer": "1789"
     },
     {
-        "question": "f doğrusal fonksiyondur.\n\nf(2x-1) + f(3x + 1) = 6x - 11\nolduğuna göre, f(3) değeri kaçtır?",
+        "question": "Aşağıdaki Nobel Ödülü kazananlardan hangisi kimya alanında ödül almamıştır?",
         "options": [
-            "-4",
-            "-3",
-            "-2",
-            "-1"
+            "Marie Curie",
+            "Linus Pauling",
+            "Richard Feynman",
+            "Ahmed Zewail"
         ],
-        "correct_answer": "-1"
+        "correct_answer": "Richard Feynman"
     },
     {
-        "question": "f: R→ [5, ∞) olmak üzere,\n\nf(x) = 2x+1 + 5\n\nolduğuna göre, f¹(21) değeri kaçtır?",
+        "question": "Birleşmiş Milletler (BM) hangi yıl kurulmuştur?",
         "options": [
-            "3",
-            "4",
-            "5",
-            "6"
+            "1943",
+            "1945",
+            "1947",
+            "1950"
         ],
-        "correct_answer": "3"
+        "correct_answer": "1945"
     },
     {
-        "question": "2x² + 6x-1=0\n\ndenkleminin kökleri m ve n'dir.\n\nBuna göre, 2m² – 6n + 1 ifadesinin değeri kaçtır?",
+        "question": "Güneş Sistemi'ndeki en büyük volkan Olympus Mons hangi gezegende yer alır?",
         "options": [
-            "10",
-            "20",
-            "30",
-            "40"
+            "Mars",
+            "Venüs",
+            "Jüpiter",
+            "Merkür"
         ],
-        "correct_answer": "10"
-    },
-    {
-        "question": "P(x - 2) = 2x3 - 5x2 + 6x + 9\n\nolduğuna göre, P(x) polinomunun x - 1 ile bölümün- den kalan kaçtır?",
-        "options": [
-            "30",
-            "32",
-            "36",
-            "40"
-        ],
-        "correct_answer": "36"
+        "correct_answer": "Mars"
     }
 ]
