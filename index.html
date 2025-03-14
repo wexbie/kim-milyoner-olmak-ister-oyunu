@@ -422,8 +422,6 @@
                 align-items: center !important;
                 justify-content: center !important;
             }
-
-
             .button-container {
                 display: flex;
                 flex-direction: row;
@@ -485,7 +483,6 @@
         }
     </style>
 </head>
-
 <body>
     <div class="black-screen" id="blackScreen"></div>
     <div class="content fade-in" id="content">
@@ -505,7 +502,6 @@
                     <div id="container-stars">
                         <div id="stars"></div>
                     </div>
-
                     <div id="glow">
                         <div class="circle"></div>
                         <div class="circle"></div>
@@ -520,19 +516,14 @@
             blackScreen.style.opacity = '0';
             setTimeout(function () {
                 blackScreen.style.display = 'none';
-            }, 2000); // Siyah ekranın kaybolma süresi
+            }, 2000);
         });
         var inputElement = document.querySelector('.input');
-
         document.querySelector('.btn').addEventListener('click', function () {
-
             var kullaniciAdi = inputElement.value;
-
             localStorage.setItem('kullaniciAdi', kullaniciAdi);
-
             window.location.href = "anasayfa.html";
         });
-
     </script>
 </body>
 
